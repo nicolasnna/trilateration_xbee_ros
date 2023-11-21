@@ -1,0 +1,10 @@
+<launch>
+    <node
+        pkg="trilateration"
+        type="trilateration_node"
+        name="trilateration"
+        output="screen"
+    >
+    </node>
+    
+</launch>

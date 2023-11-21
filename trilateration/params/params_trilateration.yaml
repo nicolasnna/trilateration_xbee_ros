@@ -1,0 +1,45 @@
+## Condiciones para la trilateracion:
+# 1. Remoto 1 en el origen
+# 2. Remoto 2 a una distancia en el eje X del remoto 1 pero en el mismo eje Y
+# 3. Remoto 3 puede estar en cualquier lugar, preferente con coordenadas XY positivas
+# 4. Los tres nodos remotos deben estar a una misma altura Z
+
+# Posiciones nodos referencia
+x_remoto1: 0
+y_remoto1: 0
+z_remoto1: 0.52
+
+x_remoto2: 1.5
+y_remoto2: 0
+z_remoto2: 0.52
+
+x_remoto3: 0.9
+y_remoto3: 5.63
+z_remoto3: 0.52
+
+# Parametros del filtro de Kalman
+q_remoto1: 0.09
+r_remoto1: 0.3
+
+q_remoto2: 0.09
+r_remoto2: 0.3
+
+q_remoto3: 0.09
+r_remoto3: 0.3
+
+# Altura del coordinador
+z_modulo_robot: 0.2
+
+# Frame del coordinador
+frame_id: 'base_footprint'
+# Offset del frame
+x_offset: -0.13
+y_offset: 0.0
+z_offset: 0.2
+# Tolerancia discriminante Z
+# 0 -> Filtro con trilateracion 3D
+# -.inf -> Sin filtro, igual que trilateración 2D
+tolerancia_z_dis: -.inf
+
+# Mostrar distancias sin filtro de Kalman
+mostrar_sin_kalman: True

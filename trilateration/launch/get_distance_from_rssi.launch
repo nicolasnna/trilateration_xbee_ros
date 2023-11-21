@@ -1,0 +1,11 @@
+<launch>
+    <rosparam command="load" file="$(find trilateration)/params/params_trilateration.yaml" />
+    
+    <node
+        pkg="trilateration"
+        type="get_distance_from_rssi.py"
+        name="distance_from_rssi"
+        output="screen"
+    >
+    </node>
+</launch>

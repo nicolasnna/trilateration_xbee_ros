@@ -1,0 +1,26 @@
+<launch>
+    <rosparam command="load" file="$(find trilateration)/params/params_trilateration.yaml" ns="trilateration" />
+    <node
+        pkg="trilateration"
+        type="execute_trilateration"
+        name="trilateration"
+        clear_params="true"
+    >
+    </node>
+    <node
+        pkg="trilateration"
+        type="get_distance_from_rssi.py"
+        name="distance_from_rssi"
+        required="true"
+        launch-prefix="xterm -e"
+    >
+    </node>
+    <node
+        pkg="trilateration"
+        type="get_rssi_xbee.py"
+        name="rssi_from_xbee"
+        required="true"
+        launch-prefix="xterm -e"
+    >
+    </node>
+</launch>

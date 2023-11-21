@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="trilateration" type="get_rssi_xbee.py" name="rssi_from_xbee">
+    <param name="port" type="string" value="/dev/ttyUSB0"/>
+    <param name="baudios" type="int" value="115200"/>
+    <param name="remoto1_mac" type="string" value="0013A20041AEC476"/>
+    <param name="remoto2_mac" type="string" value="0013A20041AEC27D"/>
+    <param name="remoto3_mac" type="string" value="0013A20041AD2F69"/>
+    </node>
+</launch>

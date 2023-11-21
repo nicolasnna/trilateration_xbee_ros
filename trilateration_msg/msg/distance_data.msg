@@ -1,0 +1,15 @@
+string id_remote1
+    float32 distance_remote1
+    float32 coef_remote1
+    float32 distance0_prom_remote1
+    float32 distance1_prom_remote1
+string id_remote2
+    float32 distance_remote2
+    float32 coef_remote2
+    float32 distance0_prom_remote2
+    float32 distance1_prom_remote2
+string id_remote3
+    float32 distance_remote3
+    float32 coef_remote3
+    float32 distance0_prom_remote3
+    float32 distance1_prom_remote3
