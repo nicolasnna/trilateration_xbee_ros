@@ -1,4 +1,4 @@
-# trilateration_xbee_ros 
+# Trilateración por Xbee en ROS
 
 Paquete ROS para emplear localización por trilateración 2D a partir del RSSI, utilizando dispositivos Xbee S2C.
 
