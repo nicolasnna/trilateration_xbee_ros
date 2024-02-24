@@ -36,6 +36,7 @@ frame_id: 'base_footprint'
 x_offset: -0.13
 y_offset: 0.0
 z_offset: 0.2
+
 # Tolerancia discriminante Z
 # 0 -> Filtro con trilateracion 3D
 # -.inf -> Sin filtro, igual que trilateración 2D
